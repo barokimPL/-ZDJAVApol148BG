@@ -3,15 +3,15 @@ package Sztos;
 import java.util.Arrays;
 import java.util.EmptyStackException;
 
-public class ArrayStack implements Stack {
+public class ArrayStackString implements StackString {
     private String[] stackData = new String[3];
-    int buffor = 0;
+    int index = 0;
 
     @Override
     public void push(String item) throws StackOverflowError {
-        if (buffor <= stackData.length-1) {
-            stackData[buffor] = item;
-            buffor++;
+        if (index <= stackData.length - 1) {
+            stackData[index] = item;
+            index++;
         } else {
             throw new StackOverflowError("Full stack exception");
         }
@@ -19,30 +19,27 @@ public class ArrayStack implements Stack {
 
     @Override
     public String pop() throws EmptyStackException {
-        if (buffor == 0) {
+        if (index == 0) {
             throw new EmptyStackException();
         } else {
-            buffor--;
-            String item = stackData[buffor];
-            stackData[buffor] = null;
+            index--;
+            String item = stackData[index];
+            stackData[index] = null;
             return item;
         }
     }
 
     @Override
     public String peek() {
-        if (buffor > 0)
-            return stackData[buffor-1];
+        if (index > 0)
+            return stackData[index - 1];
         else
             throw new EmptyStackException();
     }
 
     @Override
     public boolean isEmpty() {
-        if (buffor > 0)
-            return true;
-        else
-            return false;
+        return index > 0;
     }
 
     @Override

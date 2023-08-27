@@ -3,7 +3,7 @@ package Sztos;
 public class Main {
 
     public static void main(String[] args) {
-        Stack stack = new ArrayStack();
+        StackString stack = new ArrayStackString();
 
         stack.push("Test 1");
         stack.push("Test 2");
@@ -16,4 +16,5 @@ public class Main {
 
         System.out.println(stack);
     }
+
 }
