@@ -18,6 +18,7 @@ public class ShelterWorker {
 
     public void addAnimal(Animal animal){
         this.animals.add(animal);
+        animal.setShelterWorker(this);
     }
 
     public String getName() {

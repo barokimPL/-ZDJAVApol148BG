@@ -16,7 +16,6 @@ public class Animal {
 
     public void setShelterWorker(ShelterWorker shelterWorker) {
         this.shelterWorker = shelterWorker;
-        shelterWorker.addAnimal(this);
     }
 
     public int getId() {

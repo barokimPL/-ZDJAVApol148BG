@@ -8,9 +8,9 @@ public class Main {
        Animal cat = new Animal(1, "Basia", 3, "cat");
        Animal deer = new Animal(1, "Lucy", 13, "deer");
 
-       dog.setShelterWorker(worker1);
-       cat.setShelterWorker(worker1);
-       deer.setShelterWorker(worker1);
+       worker1.addAnimal(dog);
+        worker1.addAnimal(cat);
+        worker1.addAnimal(deer);
 
        System.out.println(worker1);
     }
