@@ -1,4 +1,4 @@
-package SztosRefactor;
+package SztosGeneric;
 
 import java.util.EmptyStackException;
 

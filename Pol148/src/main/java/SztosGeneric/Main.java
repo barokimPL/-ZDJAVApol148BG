@@ -1,4 +1,4 @@
-package SztosRefactor;
+package SztosGeneric;
 
 public class Main {
 
