@@ -1,4 +1,4 @@
-package GenericMethod;
+package SimpleTuple;
 
 import AnimalShelter.ShelterWorker;
 

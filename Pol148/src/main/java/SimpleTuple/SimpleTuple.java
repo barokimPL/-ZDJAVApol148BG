@@ -1,40 +1,36 @@
 package SimpleTuple;
 
-public class SimpleTuple<T> {
-    private final Comparable<T> rightElement;
-    private final Comparable<T> leftElement;
+public class SimpleTuple <T extends Comparable<T>> {
+    private final T rightElement;
+    private final T leftElement;
 
-    public SimpleTuple(Comparable<T> rightElement, Comparable<T> leftElement) {
+    public SimpleTuple(T rightElement, T leftElement) {
         this.rightElement = rightElement;
         this.leftElement = leftElement;
     }
 
-    public Comparable<T> getRight() {
+    public T getRight() {
         return rightElement;
     }
 
-    public Comparable<T> getLeft() {
+    public T getLeft() {
         return leftElement;
     }
 
-    public Comparable<T> getMin() {
-        int res = this.getLeft().compareTo((T) this.getRight());
-
-        if (res <= 0) {
+    public T getMin() {
+        int res = this.getLeft().compareTo(this.getRight());
+        if (res <= 0)
             return this.getLeft();
-        } else {
+        else
             return this.getRight();
-        }
     }
 
-    public Comparable<T> getMax() {
-        int res = this.getLeft().compareTo((T) this.getRight());
 
-        if (res <= 0) {
+    public T getMax() {
+        int res = this.getLeft().compareTo(this.getRight());
+        if (res <= 0)
             return this.getRight();
-        } else {
+        else
             return this.getLeft();
-        }
     }
-
 }
