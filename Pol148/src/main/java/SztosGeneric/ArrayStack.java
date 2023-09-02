@@ -39,7 +39,7 @@ public class ArrayStack <T> implements Stack <T> {
 
     @Override
     public boolean isEmpty() {
-        return index > 0;
+        return index == 0;
     }
 
     @Override

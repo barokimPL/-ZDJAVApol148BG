@@ -39,7 +39,7 @@ public class ArrayStackInteger implements StackInteger {
 
     @Override
     public boolean isEmpty() {
-        return index > 0;
+        return index == 0;
     }
 
     @Override
