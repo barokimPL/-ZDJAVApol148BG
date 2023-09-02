@@ -1,6 +1,6 @@
 package SimpleTuple;
 
-public class SimpleTuple <T>{
+public class SimpleTuple<T> {
     private final T rightElement;
     private final T leftElement;
 
@@ -23,9 +23,9 @@ public class SimpleTuple <T>{
         // if -1 then left item smaller then right item
         int res = left_item.compareTo(this.getRight());
         if (res <= 0) {
-           return left_item;
+            return left_item;
         } else {
-            return (Comparable<T>)  this.getRight();
+            return (Comparable<T>) this.getRight();
         }
     }
 
@@ -35,7 +35,7 @@ public class SimpleTuple <T>{
 
         int res = left_item.compareTo(this.getRight());
         if (res <= 0) {
-            return (Comparable<T>)  this.getRight();
+            return (Comparable<T>) this.getRight();
         } else {
             return left_item;
         }
