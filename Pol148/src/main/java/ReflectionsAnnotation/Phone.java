@@ -1,7 +1,7 @@
 package ReflectionsAnnotation;
 
 public class Phone {
-    private String model;
+    public String model;
     private String producer;
     private int yearOfRelease;
 
