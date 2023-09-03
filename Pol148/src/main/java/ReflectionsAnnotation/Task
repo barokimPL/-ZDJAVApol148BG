@@ -1,0 +1,23 @@
+Zadanie 1
+Napisać dowolną klasę która ma dowlne 3-4 pola - proste i obiektowe.
+Stworzyć w tej klasie dowlne 3-4 metody jakies proste które coś tam obliczają.
+Stworzyć w tej klasie 2 konstruktory, bezargumentowy i argumentowy.
+W osobnym pliku zdefiniować adnotację która się nazywa "SuperMethod" która przyjmuje paramets "run" który jest true albo false.
+Dowolną metodę w wcześniej stworzonej klasie opatrzeć adnotacją SuperMethod i dać mu parameter "run" na true;
+ZADANIA 2
+Napisać kod może być w mainie, może być też w osobnej metodzie który:
+Wypiszę na podstawie poprzedniej klasy:
+- nazwkę klasy,
+- ile ma konstruktoryów,
+- ile ma metod
+- typy zsracame przez metody
+- nazwy wrzyskich metod.
+- nazwy wszystkich pół
+- typy dla poszczególnych pól.
+Oczywiście ma to robić w sposób dynamiczyny tj. jeśli zmienię którą z tych rzeczy w klasie to bez zamiany kod ma działać
+skorzystać z mechanizmu refleksji (np. klasa "Class"
+Zadanie 3
+Napisać kod może być w mainie może być w osobnej metodzie który
+"zbada" klasę z zadania 1 i znajdzie w niej metodę opatrzoną adnotacją "SuperMethod"
+następnie stworzy obiekt tej klasy ale nie przez new tylko przez mechanizm refleksji a mastępnie
+wywoła metodę opatrzoną adnotacją SuperMethod
