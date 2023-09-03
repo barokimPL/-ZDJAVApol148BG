@@ -10,7 +10,6 @@ public class Main {
 //        System.out.println(phone.butWhatIfItWasSamsung());
 
         getRuntimeInfo();
-
     }
 
     public static void getRuntimeInfo() {
