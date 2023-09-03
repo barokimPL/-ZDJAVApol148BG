@@ -54,7 +54,7 @@ public class Main {
     }
 
     public static void listFieldTypes(Class<Phone> cl) {
-        System.out.println("All field types");
+        System.out.println("All field types: ");
         for (Field field : cl.getDeclaredFields()) {
             field.setAccessible(true);
             System.out.println(field.getName() + " has a type of " + field.getType());
