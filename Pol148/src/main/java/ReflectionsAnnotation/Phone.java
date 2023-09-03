@@ -21,7 +21,7 @@ public class Phone {
     public String butWhatIfItWasSamsung() {
         return this.producer.equals("Samsung")
                 ? "Still a Samsung."
-                : "Than it wouldn't be  a " + this.producer + " anymore.";
+                : "Than it wouldn't be a " + this.producer + " anymore.";
     }
 
     public int getAge(int currentYear) {
