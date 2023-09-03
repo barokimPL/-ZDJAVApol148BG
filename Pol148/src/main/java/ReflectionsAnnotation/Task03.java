@@ -14,8 +14,10 @@ public class Task03 {
 
         try {
             Phone phone = (Phone) constructor.newInstance("Samsung", "Galaxy S5", 2022);
-            List<Method> method = findMethodsWithAnnotation(phone.getClass(),"SuperMethod");
-            System.out.println("Support's going to last until the year " + method.get(0).invoke(phone, 4));
+            List<Method> methods = findMethodsWithAnnotation(phone.getClass(),"SuperMethod");
+            if (!methods.isEmpty())
+                System.out.println("Support's going to last until the year " + methods.get(0).invoke(phone, 4));
+
         } catch (InstantiationException e) {
             System.out.println("AaaaaAaAAAA!");
         } catch (IllegalAccessException e) {
